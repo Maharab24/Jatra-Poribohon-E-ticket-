@@ -56,7 +56,7 @@
                         <li><a>Search</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
+                <div class="navbar-end " onclick="ticketSection()">
                     <a class="btn btn-soft btn-success border border-emerald-400 ">Bus <img width="24" height="24"
                             src="images/bus-icon.png" alt="bus2" /> </a>
                 </div>
@@ -74,7 +74,7 @@
                         Yes, You choose the best option. We provide the best. <br>
                         We must ensure customer's comfort, safety and satisfaction
                     </p>
-                    <button class="btn btn-primary text-black">Buy ticket</button>
+                    <button class="btn btn-primary text-black" onclick="ticketSection()">Buy ticket</button>
                 </div>
             </div>
         </div>
@@ -110,14 +110,14 @@
                     <img src="images/cupon-devider.png" alt="">
                 </div>
                 <div class="w-[40%] space-y-2 flex flex-col p-4 justify-center">
-                    <h2 class="lg:text-3xl font-bold">Couple 20</h2>
+                    <h2 class="lg:text-3xl font-bold">COUPLE20</h2>
                     <p>Cupon Code</p>
                 </div>
             </div>
         </div>
-        <div class="flex bg-green-400 lg:w-1/2  rounded-2xl m-auto my-10 ">
+        <div id="hidden-cupon" class="flex bg-green-400 lg:w-1/2  rounded-2xl m-auto my-10 hidden">
                 <div class="w-[60%] space-y-2 flex flex-col lg:p-6 p-4  justify-center ">
-                    <h2 class="lg:text-3xl font-bold">20% OFF</h2>
+                    <h2 class="lg:text-3xl font-bold">30% OFF</h2>
                     <p class="lg:text-xl text-black">on your next purchase</p>
                     <p>use by January 2024</p>
                 </div>
@@ -125,12 +125,12 @@
                     <img src="images/cupon-devider.png" alt="">
                 </div>
                 <div class="w-[40%] space-y-2 flex flex-col p-4 justify-center">
-                    <h2 class="lg:text-3xl font-bold">Couple 20</h2>
+                    <h2 class="lg:text-3xl font-bold">FAMILY30</h2>
                     <p>Cupon Code</p>
                 </div>
             </div>
         <div class="flex justify-center">
-            <button class="btn border-[#1DD100] text-[#1DD100] px-7 mt-9 ">See All Offers</button>
+            <button class="btn border-[#1DD100] text-[#1DD100] px-7 mt-9 " onclick="showHiddenSection()">See All Offers</button>
         </div>
     </section>
 
@@ -228,15 +228,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">A1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">A1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">A2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">A2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">A3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">A3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">A4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">A4</button>
               </div>
             </div>
           </div>
@@ -246,15 +246,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">B1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">B1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">B2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">B2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">B3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">B3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">B4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">B4</button>
               </div>
             </div>
           </div>
@@ -264,15 +264,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">C1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">C1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">C2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">C2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">C3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">C3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">C4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">C4</button>
               </div>
             </div>
           </div>
@@ -282,15 +282,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">D1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">D1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">D2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">D2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">D3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">D3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">D4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">D4</button>
               </div>
             </div>
           </div>
@@ -300,15 +300,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">E1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">E1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">E2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">E2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">E3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">E3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">E4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">E4</button>
               </div>
             </div>
           </div>
@@ -318,15 +318,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">F1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">F1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">F2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">F2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">F3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">F3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">F4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">F4</button>
               </div>
             </div>
           </div>
@@ -336,15 +336,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">G1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">G1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">G2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">G2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">G3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">G3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">G4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">G4</button>
               </div>
             </div>
           </div>
@@ -354,15 +354,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">H1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">H1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">H2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">H2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">H3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">H3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">H4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">H4</button>
               </div>
             </div>
           </div>
@@ -372,15 +372,15 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">I1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">I1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">I2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">I2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">I3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">I3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">I4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">I4</button>
               </div>
             </div>
           </div>
@@ -390,18 +390,22 @@
             <div class="flex justify-between flex-1 ml-4">
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">J1</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] text-xl font-bold text-[#03071280]">J1</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">J2</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">J2</button>
               </div>
               <div class="lg:space-x-8">
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">J3</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">J3</button>
                 <button
-                  class="btn btn-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">J4</button>
+                  class="btn seat-class lg:w-[110px] h-[56px] bg-[#F7F8F8] font-bold text-xl text-[#03071280]">J4</button>
+
               </div>
+
             </div>
+
           </div>
+          <button class="btn bg-red-600 rounded-xl" ondblclick="cancelBtn()">Cancel</button>
 
 
         </div>
@@ -414,10 +418,12 @@
           <!-- container div -->
           <div class="bg-[#F7F8F8] my-7 p-7 rounded-2xl">
             <div class="flex justify-around mb-4">
-              <p class="text-[#030712] font-semibold">Seat <span id="cnt-increase"
+              <p class="text-[#030712] font-semibold">Seat <span id="seat-count"
                   class="bg-[#1DD100] text-white px-1 rounded-md">0</span></p>
-              <p class="text-[#030712] font-semibold">class</p>
-              <p class="text-[#030712] font-semibold">Price</p>
+              <div id="seat-name" class="">
+                <p class="text-[#030712] font-semibold">class</p>
+              </div>
+
             </div>
             <hr>
 
@@ -429,26 +435,37 @@
             <hr>
             <div class="flex justify-between my-4 px-4">
               <p class="text-[#030712] font-semibold">Total Price</p>
-              <p class="text-[#030712] font-semibold">BDT: <span id="total-cost">0</span></p>
+              <p class="text-[#030712] font-semibold">BDT: <span id="total-price">0</span></p>
             </div>
+
             <div class="gap-0">
               <input id="coupon-input" class="p-3 rounded-md bg-white" type="text" placeholder="Have any copupon?">
               <button id="apply-coupon" class="btn bg-[#1DD100] text-white px-7" disabled>Apply</button>
             </div>
-            <div class="flex justify-between my-4 px-4">
+
+            <div id="grand-total" class="flex justify-between my-4 px-4 hidden">
               <p class="text-[#030712] font-semibold">Grand Total</p>
-              <p class="text-[#030712] font-semibold">BDT: <span id="grand-total">0</span></p>
+              <p class="text-[#030712] font-semibold">BDT: <span id="grand-totalTk">0</span></p>
             </div>
+
           </div>
+
+
           <label class="text-[#030712] font-semibold" for="">Passenger Name*</label><br>
-          <input class="my-5 w-full p-3 rounded-lg" type="text" name="" id="" placeholder="Enter your name">
+          <input class="my-5 w-full p-3 rounded-lg" type="text" name="" id="passenger-name" placeholder="Enter your name">
+
+
           <label class="text-[#030712] font-semibold" for="">Phone Number*</label><br>
           <input class="my-5 w-full p-3 rounded-lg" type="tel" name="" id="phone-num"
             placeholder="Enter your phone number">
+
+
           <label class="text-[#030712] font-semibold" for="">Email ID</label><br>
           <input class="my-5 w-full p-3 rounded-lg" type="email" name="" id="" placeholder="Enter your email id">
+
+
           <button id="next-btn" class="btn w-full text-xl bg-[#1DD100] text-white px-7"
-            disabled>Next</button>
+            disabled>Confirm</button>
           <div class="flex justify-around mt-6">
             <a class="underline text-[#03071280]" href="">Terms and Conditions</a>
             <a class="underline text-[#03071280]" href="">Cancellation Policy</a>
