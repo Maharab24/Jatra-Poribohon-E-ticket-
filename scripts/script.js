@@ -1,5 +1,5 @@
 function ticketSection() {
-    const mainSection = document.getElementById('main-section');
+    const mainSection = document.getElementById('booking-section');
     mainSection.scrollIntoView({ behavior: 'smooth' });
 
 }
@@ -41,6 +41,11 @@ for (const seat of seatElements) {
 
         appendChild('seat-name', seat.innerText);
         setInnerText('total-price', price);
+
+        let remainingSeats = 40-count;
+        setInnerText('remain-seat',remainingSeats);
+
+
     })
 }
 
@@ -64,10 +69,60 @@ document.getElementById('apply-coupon').addEventListener('click',function(){
         document.getElementById('grand-total').classList.remove('hidden');
 
         setInnerText('grand-totalTk',grandTotal);
-        
+
 
     }
 })
+
+ const nextBtn = document.getElementById('next-btn');
+      const phoneNum = document.getElementById('phone-num');
+      phoneNum.addEventListener('input', function(){
+         if(phoneNum.value.length === 11 && count>0 ){
+            nextBtn.disabled = false;
+         }
+         else{
+            nextBtn.disabled = true;
+            phoneNum.value='';
+            alert("You can't select any seats");
+         }
+      }
+
+    )
+
+const nextBtn2 = document.getElementById('next-btn');
+nextBtn2.addEventListener('click', function(){
+
+   const modalBox = document.getElementById('my_modal_7');
+   modalBox.checked = true;
+})
+
+
+
+function next(){
+   const modalBox = document.getElementById('my_modal_7');
+   modalBox.checked = false;
+}
+
+
+// function cancelBtn(){
+
+//     count=0;
+//     remainingSeats=0;
+//     price = 0;
+//     setInnerText('remain-seat',40-count);
+//     setInnerText('seat-count',count);
+
+
+// }
+
+
+
+document.getElementsByClassName('footer')[0].addEventListener('click', function () {
+  window.open('https://www.linkedin.com/in/maharab-hossain-opi-548294228/', '_blank');
+});
+
+
+
 
 
 
