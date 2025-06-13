@@ -29,12 +29,4 @@ https://maharab24.github.io/Jatra-Poribohon-E-ticket-/
 
 ---
 
-## 🔍 Project Structure
 
-
-Jatra‑Poribohon-E-ticket-/
-├── index.html ← Main booking interface
-├── scripts/ ← JS files (validation, e‑ticket generation)
-├── images/ ← Static icons 
-├── tailwind.config.js ← Tailwind configuration
-└── README.md
